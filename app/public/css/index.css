@@ -96,7 +96,7 @@ body {
 
 #bioImage {
 	background-image: url("../images/img_0268_2.jpg");
-	height: 600px;
+	height: 900px;
 	width: 100%;
 	background-size: cover;
 	background-position: center top;
@@ -129,14 +129,21 @@ p {
 @media (min-width : 768px) {
 	#jumbo {
 		height: 400px;
+		opacity: 1.0;
 	}
 	#tronText {
-		font-size: 90px;
+		font-size: 65px;
+		text-align: center;
 	}
 	#bioDesc {
-		top: 230px;
+		height: 900px;
+		opacity: 1.0;
+		top: 0px;
 	}
 	#outerHomeText {
+		opacity: 1.0;
+		margin-left: 0px;
+		margin-right: 0px;
 		height: auto;
 	}
 	#outerImageDiv {
@@ -150,6 +157,16 @@ p {
 	}
 	#tableTwo {
 		display: inline;
+	}
+	#homeText {
+		width: 100%;
+	}
+	#bioImage {
+		opacity: 1.0;
+	}
+	p {
+		font-size: 25px;
+		margin-top: 45px;
 	}
 }
 
@@ -174,11 +191,14 @@ p {
 	}
 	#jumbo {
 		height: 200px;
+		opacity: 0.0;
 	}
 	#tronText {
 		font-size: 68px;
 	}
 	#bioDesc {
+		height: auto;
+		opacity: 0.0;
 		top: -50px;
 	}
 	#outerImageDiv {

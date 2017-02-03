@@ -53,29 +53,29 @@ $(document).ready(function() {
       }, 1000);
     }, 7000);
     //END OF CAROUSEL
-  }
-  var imagePositionMain = 1;
-  var imagePositionBio = 1;
-  $("#jumbo").animate({
-    marginTop: "+=10px",
-    opacity: "1.0"
-  }, 1000, function() {
-    $("#outerImageDiv").animate({
-      marginLeft: "0px",
+    var imagePositionMain = 1;
+    var imagePositionBio = 1;
+    $("#jumbo").animate({
+      marginTop: "+=10px",
       opacity: "1.0"
-    }, 1200 );
-    $("#outerHomeText").animate({
-      marginRight: "0px",
-      marginLeft: "0px",
-      opacity: "1.0"
-    }, 1200, function() {
-      $("#bioDesc").animate({
-        top: "+=70px",
+    }, 1000, function() {
+      $("#outerImageDiv").animate({
+        marginLeft: "0px",
         opacity: "1.0"
-      }, 1000 , "swing");
-      $("#bioImage").animate({
+      }, 1200 );
+      $("#outerHomeText").animate({
+        marginRight: "0px",
+        marginLeft: "0px",
         opacity: "1.0"
-      }, 1000);
+      }, 1200, function() {
+        $("#bioDesc").animate({
+          top: "+=70px",
+          opacity: "1.0"
+        }, 1000 , "swing");
+        $("#bioImage").animate({
+          opacity: "1.0"
+        }, 1000);
+      });
     });
-  });
+  }
 });
