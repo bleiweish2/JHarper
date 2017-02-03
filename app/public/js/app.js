@@ -15,7 +15,7 @@ $(document).ready(function() {
   		opacity: "1.0"
   	}, 1200, function() {
       $("#bioDesc").animate({
-        top: "30px",
+        top: "+=70px",
         opacity: "1.0"
       }, 1000 , "swing");
       $("#bioImage").animate({

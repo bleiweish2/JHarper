@@ -1,5 +1,6 @@
 body {
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 .container {
@@ -127,7 +128,13 @@ p {
 
 @media only screen and (min-width: 768px) {
 	#jumbo {
-
+		height: 140px;
+	}
+	#tronText {
+		font-size: 50px;
+	}
+	#bioDesc {
+		top: 230px;
 	}
 }
 
@@ -141,6 +148,12 @@ p {
 	}
 	#jumbo {
 		height: 200px;
+	}
+	#tronText {
+		font-size: 68px;
+	}
+	#bioDesc {
+		top: -50px;
 	}
 }
 
