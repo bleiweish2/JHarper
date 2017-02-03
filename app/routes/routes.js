@@ -23,7 +23,7 @@ module.exports = function(app){
 		res.sendFile(path.join(__dirname + '/../public/html/contact.html'));
 	});
 	app.get('/download', function(req, res, next){
-		var file = __dirname + '/../public/images/menu.pdf';
+		var file = __dirname + '/../public/images/Menu.pdf';
 		res.download(file);
 	});
 	app.use(function(req, res){
