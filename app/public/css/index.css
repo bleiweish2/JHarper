@@ -49,12 +49,13 @@ body {
 	border-color: #c7cfdd;
 	background-color: #162238;
 	height: 300px;
+	overflow: hidden;
 }
 
 #homeText {
 	background-color: #c7cfdd;
 	height: 100%;
-	overflow-y: auto;
+	overflow: auto;
 }
 
 #outerImageDiv {
@@ -73,6 +74,10 @@ body {
 	background-color: #162238;
 	height: 100%;
 	position: relative;
+}
+
+#firstRow {
+	margin-top: 45px;
 }
 
 #secondRow {
@@ -114,4 +119,40 @@ p {
 	opacity: 0.0;
 	box-shadow: 5px 5px 5px black;
 	top: -50px;
+}
+
+/* MEDIA QUERIES */
+
+/* Small Screens */
+
+@media only screen and (min-width: 768px) {
+	#jumbo {
+
+	}
+}
+
+/* Medium Screens */
+@media only screen and (min-width : 992px) {
+	#outerHomeText {
+		height: 250px;
+	}
+	#outerImageDiv {
+		height: 250px;
+	}
+	#jumbo {
+		height: 200px;
+	}
+}
+
+/* Large Screens */
+@media only screen and (min-width : 1200px) {
+	#outerHomeText {
+		height: 300px;
+	}
+	#outerImageDiv {
+		height: 300px;
+	}
+	#jumbo {
+		height: 225px;
+	}
 }

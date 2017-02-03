@@ -4,6 +4,16 @@ body {
 	background-attachment: fixed;
 }
 
+.container {
+	position: absolute;
+	top: 45px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: auto;
+}
+
 .portItemDesc, .portItemDescLong {
 	background-color: rgba(199, 207, 221, 0.6);
 	box-shadow: 5px 5px 5px black;

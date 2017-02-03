@@ -35,16 +35,6 @@ body {
 	color: #c7cfdd;
 }
 
-.container {
-	position: absolute;
-	top: 45px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	height: auto;
-}
-
 p {
 	padding: 10px;
 	font-family: 'Syncopate', sans-serif;
