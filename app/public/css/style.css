@@ -1,0 +1,73 @@
+html {
+	min-height: 100%;
+}
+
+body {
+	height: 100%;
+	background-image: url('../images/68273_302516166516107_862938243_n.jpg');
+	background-size: cover;
+	background-position: center top;
+	overflow: auto;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+    background-color: #162238;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    height: 50px;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+    height: 50px;
+}
+
+.navbarItem {
+	margin-left: 25px;
+	margin-right: 25px;
+	font-size: 20px;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #c7cfdd;
+}
+
+.container {
+	position: absolute;
+	top: 45px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: auto;
+}
+
+p {
+	padding: 10px;
+	font-family: 'Syncopate', sans-serif;
+	color: #162238;
+	font-size: 16px;
+}
+
+#footer {
+	position: fixed;
+	height: 42px;
+	background-color: #162238;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+}
+
+.socMedIcon {
+	height: 33px;
+	width: 33px;
+	margin: 4px 20px 4px 20px;
+}
