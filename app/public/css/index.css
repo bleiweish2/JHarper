@@ -136,9 +136,12 @@ p {
 		text-align: center;
 	}
 	#bioDesc {
-		height: 900px;
+		height: 1300px;
 		opacity: 1.0;
 		top: 0px;
+	}
+	#bioImage {
+		height: 1300px;
 	}
 	#outerHomeText {
 		opacity: 1.0;
@@ -166,7 +169,9 @@ p {
 	}
 	p {
 		font-size: 25px;
-		margin-top: 45px;
+		margin-top: 230px;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 }
 
@@ -212,6 +217,15 @@ p {
 	}
 	#tableTwo {
 		display: none;
+	}
+	#bioImage {
+		height: 900px;
+	}
+	p {
+		font-size: 10px;
+		margin-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 
