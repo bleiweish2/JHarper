@@ -11,6 +11,6 @@ $(document).ready(function() {
 		marginTop: "0px"
 	}, 1000, "swing");
 	$("#viewPDF").on("click", function() {
-		window.open('../images/menu.pdf');
+		window.open('images/menu.pdf');
 	});	
 });
