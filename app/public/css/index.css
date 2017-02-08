@@ -187,6 +187,7 @@ p {
 @media (min-width : 992px) {
 	#outerHomeText {
 		height: 250px;
+		opacity: 0.0;
 	}
 	#homeText {
 		overflow: auto;

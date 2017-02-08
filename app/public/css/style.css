@@ -60,12 +60,12 @@ p {
 .socMedIcon {
 	height: 33px;
 	width: 33px;
-	margin: 14px 40px 14px 40px;
+	margin: 4px 20px 4px 20px;
 }
 
 @media (min-width : 768px) {
 	.navbar.center .navbar-inner {
-	    height: 100px;
+	  height: 100px;
 	}
 	#footer {
 		height: 100px;
@@ -73,5 +73,20 @@ p {
 	.socMedIcon {
 		height: 66px;
 		width: 66px;
+		margin: 14px 40px 14px 40px;
+	}
+}
+
+@media (min-width : 992px) {
+	.navbar.center .navbar-inner {
+	    height: 50px;
+	}
+	#footer {
+		height: 42px;
+	}
+	.socMedIcon {
+		height: 33px;
+		width: 33px;
+		margin: 4px 20px 4px 20px;
 	}
 }
