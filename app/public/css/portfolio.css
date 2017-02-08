@@ -77,3 +77,36 @@ p {
 	background-image: url('../images/10445554_574536892687783_3395580984053393424_n.jpg');
 	top: 200%;
 }
+
+.navicon {
+	padding: 10px 80px 10px 80px;
+	font-size: 55px;
+}
+
+@media (max-width : 992px) {
+	#portfolioContainer {
+		position: absolute;
+		width: 100%;
+	}
+	.portImg {
+		background-attachment: initial;
+		margin-top: 50px;
+		height: 30%;
+		background-position: center;
+	}
+	#portImageTwo {
+		top: 30%;
+	}
+
+	#portImageThree {
+		top: 60%;
+	}
+
+	#portImageFour {
+		top: 90%;
+	}
+
+	#portImageFive {
+		top: 120%;
+	}
+}

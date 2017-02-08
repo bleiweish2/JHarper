@@ -22,4 +22,7 @@ $(document).ready(function() {
 	$("#sendEmail").on("click", function() {
 		alert("Waiting on AWS");
 	});
+	$('.navicon').on('click', function(){
+    	$('.mainNavDropDown').slideToggle(500);
+   	});
 });

@@ -12,5 +12,8 @@ $(document).ready(function() {
 	}, 1000, "swing");
 	$("#viewPDF").on("click", function() {
 		window.open('images/Menu.pdf');
-	});	
+	});
+	$('.navicon').on('click', function(){
+    	$('.mainNavDropDown').slideToggle(500);
+   	});
 });

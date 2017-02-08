@@ -23,7 +23,7 @@ $(window).load(function() {
 			});
 		});
 	});
-
+	var mq = window.matchMedia( "(min-width: 992px)" );
 	var toggle = [0, 0, 0, 0, 0];
 	var globalThis = false;
 	var globalThisVal = -1;
@@ -62,17 +62,35 @@ $(window).load(function() {
 					if(i > globalThis.attr("val"))
 					{
 						//move those tabs up
-						$(".portImg[val='" + i + "']").animate({
-							top: "-=50%"
-						}, 150, "swing");
+						if(mq.matches)
+					  	{
+							$(".portImg[val='" + i + "']").animate({
+								top: "-=50%"
+							}, 150, "swing");
+						}
+						else {
+							$(".portImg[val='" + i + "']").animate({
+								top: "-=30%"
+							}, 150, "swing");
+						}
 					}
 				}
 				//close the currently opened tab
-				globalThis.animate({
-					height: "50%"
-				}, 150, "swing", function() {
-					globalThis.css({"z-index": "1"});
-				});
+				if(mq.matches)
+				{
+					globalThis.animate({
+						height: "50%"
+					}, 150, "swing", function() {
+						globalThis.css({"z-index": "1"});
+					});
+				}
+				else {
+					globalThis.animate({
+						height: "30%"
+					}, 150, "swing", function() {
+						globalThis.css({"z-index": "1"});
+					});
+				}
 				globalThis.find('.portItemDescLong').animate({
 					opacity: "0.0"
 				}, 100);
@@ -89,22 +107,43 @@ $(window).load(function() {
 				if(i > $(this).attr("val"))
 				{
 					//move those tabs down to make room
-					$(".portImg[val='" + i + "']").animate({
-						top: "+=50%"
-					}, 150, "swing");
+					if(mq.matches)
+					{
+						$(".portImg[val='" + i + "']").animate({
+							top: "+=50%"
+						}, 150, "swing");
+					}
+					else {
+						$(".portImg[val='" + i + "']").animate({
+							top: "+=30%"
+						}, 150, "swing");
+					}
 				}
 			}
 			//change the tabs toggled state to open
 			toggle[$(this).attr("val")] = 1;
 			//open the clicked tab
-			$(this).css({"z-index": "3"}).animate({
-				height: "100%",
-				scrollTo: "0"
-			}, 150, "swing", function() {
-				$("html, body").animate({
-					scrollTop: $(this).offset().top - 50,
-				}, 150, "swing");
-			});
+			if(mq.matches)
+			{
+				$(this).css({"z-index": "3"}).animate({
+					height: "100%",
+					scrollTo: "0"
+				}, 150, "swing", function() {
+					$("html, body").animate({
+						scrollTop: $(this).offset().top - 50,
+					}, 150, "swing");
+				});
+			}
+			else {
+				$(this).css({"z-index": "3"}).animate({
+					height: "60%",
+					scrollTo: "0"
+				}, 150, "swing", function() {
+					$("html, body").animate({
+						scrollTop: $(this).offset().top - 80,
+					}, 150, "swing");
+				});
+			}
 		}
 		//if the clicked tab is open
 		else
@@ -122,21 +161,44 @@ $(window).load(function() {
 				if(i > $(this).attr("val"))
 				{
 					//move those tabs up
-					$(".portImg[val='" + i + "']").animate({
-						top: "-=50%"
-					}, 150, "swing");
+					if(mq.matches)
+					{
+						$(".portImg[val='" + i + "']").animate({
+							top: "-=50%"
+						}, 150, "swing");
+					}
+					else {
+						$(".portImg[val='" + i + "']").animate({
+							top: "-=30%"
+						}, 150, "swing");
+					}
 				}
 			}
 			//close the tab and set globalThis false, meaning no tabs are open
-			globalThis.animate({
-				height: "50%"
-			}, 150, "swing", function() {
-				globalThis.css({"z-index": "1"});
-				globalThis = false;
-			});
+			if(mq.matches)
+			{
+				globalThis.animate({
+					height: "50%"
+				}, 150, "swing", function() {
+					globalThis.css({"z-index": "1"});
+					globalThis = false;
+				});
+			}
+			else {
+				globalThis.animate({
+					height: "30%"
+				}, 150, "swing", function() {
+					globalThis.css({"z-index": "1"});
+					globalThis = false;
+				});
+
+			}
 			//set this tabs toggle value to closed
 			toggle[$(this).attr("val")] = 0;
 			globalThisVal = -1;
 		}
+	});
+	$('.navicon').on('click', function(){
+	   $('.mainNavDropDown').slideToggle(500);
 	});
 });
