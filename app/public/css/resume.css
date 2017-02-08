@@ -99,3 +99,8 @@ h4 {
 .table-striped>tbody>tr:nth-child(even)>th {
 	background-color: #c7cfdd;
 }
+
+.navicon {
+	padding: 10px 80px 10px 80px;
+	font-size: 55px;
+}

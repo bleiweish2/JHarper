@@ -81,14 +81,18 @@ $(window).load(function() {
 					globalThis.animate({
 						height: "50%"
 					}, 150, "swing", function() {
-						globalThis.css({"z-index": "1"});
+						globalThis.css({"z-index": "0"});
 					});
 				}
 				else {
+					if($(this).attr("val") == 4)
+					{
+						$(this).css({"margin-bottom": "100px"});
+					}
 					globalThis.animate({
 						height: "30%"
 					}, 150, "swing", function() {
-						globalThis.css({"z-index": "1"});
+						globalThis.css({"z-index": "0"});
 					});
 				}
 				globalThis.find('.portItemDescLong').animate({
@@ -135,6 +139,11 @@ $(window).load(function() {
 				});
 			}
 			else {
+				if($(this).attr("val") == 4)
+				{
+					$(this).css({"margin-bottom": "30%"});
+				}
+				$(this).find(".portItemDescLong").css({"z-index": "4"});
 				$(this).css({"z-index": "3"}).animate({
 					height: "60%",
 					scrollTo: "0"
@@ -151,9 +160,12 @@ $(window).load(function() {
 			$(this).find('.portItemDescLong').animate({
 				opacity: "0.0"
 			}, 100);
-			$(this).find('.portItemDesc').animate({
-				opacity: "1.0"
-			}, 100);
+			if(mq.matches)
+			{	
+				$(this).find('.portItemDesc').animate({
+					opacity: "1.0"
+				}, 100);
+			}
 			//go through all tabs toggle values 
 			for(var i = 0; i < toggle.length; i++)
 			{
@@ -180,7 +192,7 @@ $(window).load(function() {
 				globalThis.animate({
 					height: "50%"
 				}, 150, "swing", function() {
-					globalThis.css({"z-index": "1"});
+					globalThis.css({"z-index": "0"});
 					globalThis = false;
 				});
 			}
@@ -188,10 +200,13 @@ $(window).load(function() {
 				globalThis.animate({
 					height: "30%"
 				}, 150, "swing", function() {
-					globalThis.css({"z-index": "1"});
+					globalThis.css({"z-index": "0"});
 					globalThis = false;
 				});
-
+				if($(this).attr("val") == 4)
+				{
+					$(this).css({"margin-bottom": "100px"});
+				}
 			}
 			//set this tabs toggle value to closed
 			toggle[$(this).attr("val")] = 0;

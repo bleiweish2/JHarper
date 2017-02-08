@@ -76,6 +76,7 @@ p {
 	margin-left: 1500px;
 	background-image: url('../images/10445554_574536892687783_3395580984053393424_n.jpg');
 	top: 200%;
+	margin-bottom: 0px;
 }
 
 .navicon {
@@ -108,5 +109,16 @@ p {
 
 	#portImageFive {
 		top: 120%;
+		margin-bottom: 50px;
+	}
+	.portItemDescLong {
+		background-color: rgba(199, 207, 221, 1.0);
+		height: 30%;
+		bottom: 100px;
+		position: fixed;
+		z-index: 4; 
+	}
+	p {
+		font-size: 16px;
 	}
 }

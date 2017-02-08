@@ -60,6 +60,10 @@ body {
   color: #162238;
  }
 
+ #navSmall {
+ 	display: none;
+ }
+
  .navbarItem {
  	font-family: 'Syncopate', sans-serif;
  }
@@ -100,7 +104,7 @@ p {
 	margin: 4px 20px 4px 20px;
 }
 
-@media (min-width : 320px) {
+@media (max-width : 992px) {
 	#footer {
 		height: 100px;
 	}
@@ -112,33 +116,7 @@ p {
 	#navLarge {
 		display: none;
 	}
-}
-
-@media (min-width : 768px) {
-}
-
-@media (min-width : 992px) {
-	.navbar.center .navbar-inner {
-	    height: 50px;
-	}
-	#footer {
-		height: 42px;
-	}
-	.socMedIcon {
-		height: 33px;
-		width: 33px;
-		margin: 4px 20px 4px 20px;
-	}
 	#navSmall {
-		display: none;
-	}
-	#navLarge {
 		display: inline;
-	}
-	.navbarItem {
-		margin-left: 25px;
-		margin-right: 25px;
-		font-size: 20px;
-		vertical-align: middle;
 	}
 }

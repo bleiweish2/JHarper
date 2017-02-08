@@ -24,9 +24,7 @@ $(document).ready(function() {
       }, 1000);
     }, 7000);
     //END OF CAROUSEL
-  var mq = window.matchMedia( "(min-width: 992px)" );
-	if(mq.matches)
-  {
+  
     //CAROUSEL
     //add more images here
     var imageURLSMain = [
@@ -67,7 +65,7 @@ $(document).ready(function() {
         opacity: "1.0"
       }, 1200, function() {
         $("#bioDesc").animate({
-          top: "+=70px",
+          top: "+=50px",
           opacity: "1.0"
         }, 1000 , "swing");
         $("#bioImage").animate({
@@ -75,7 +73,7 @@ $(document).ready(function() {
         }, 1000);
       });
     });
-  }
+  
   $('.navicon').on('click', function(){
     $('.mainNavDropDown').slideToggle(500);
    });
