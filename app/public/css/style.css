@@ -31,6 +31,7 @@ body {
   font-family: 'Syncopate', sans-serif;
   display: inline-block;
   height: 100px;
+  margin-bottom: 0px;
  }
 .navicon{
   font-size: 55px;

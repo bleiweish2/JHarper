@@ -38,10 +38,6 @@ label {
 	width: 0%;
 }
 
-.form-control:active {
-	border-bottom-color: red;
-}
-
 .myButton {
 	background-color: #8d7b92;
 	color: #c7cfdd;
@@ -70,4 +66,15 @@ label {
 .navicon {
 	padding: 10px 80px 10px 80px;
 	font-size: 55px;
+}
+
+@media (max-width : 992px) {
+	#contactContainer {
+		position: absolute;
+		width: 100%;
+		top: 100px;
+	}
+	label {
+		font-size: 20px;
+	}
 }

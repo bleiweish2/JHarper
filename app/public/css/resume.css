@@ -40,7 +40,7 @@ p {
 	font-size: 10px;
 }
 
-h4 {
+h4, h3, h2, h1 {
 	padding: 10px;
 	font-family: 'Syncopate', sans-serif;
 	color: #c7cfdd;
@@ -103,4 +103,52 @@ h4 {
 .navicon {
 	padding: 10px 80px 10px 80px;
 	font-size: 55px;
+}
+
+#infoRowSmall {
+	display: none;
+}
+
+@media (max-width : 992px) {
+	#resumeContainer {
+		position: absolute;
+		width: 100%;
+		top: 100px;
+	}
+	#outerImageDiv {
+		display: none;
+	}
+	#outerResumeDiv {
+		margin-bottom: 100px;
+	}
+	#infoRowLarge {
+		display: none;
+	}
+	#infoRowSmall {
+		display: inline;
+	}
+	h1, h2, p {
+		text-align: center;
+	}
+	p {
+		font-size: 20px;
+	}
+	.myButton {
+		position: relative;
+		width: 100%;
+		font-size: 24px;
+		vertical-align: middle;
+	}
+}
+
+@media (max-width : 1200px) {
+	#outerImageDiv {
+		height: 250px;
+	}
+	.info {
+		height: 250px;
+	}
+	td {
+		font-size: 20px;
+	}
 }
