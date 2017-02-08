@@ -111,6 +111,9 @@ p {
 		top: 120%;
 		margin-bottom: 50px;
 	}
+	.portItemDesc {
+		display: none;
+	}
 	.portItemDescLong {
 		background-color: rgba(199, 207, 221, 1.0);
 		height: 30%;
