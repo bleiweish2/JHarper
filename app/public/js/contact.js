@@ -20,7 +20,25 @@ $(document).ready(function() {
 		}, 100);
 	});
 	$("#sendEmail").on("click", function() {
-		alert("Waiting on AWS");
+		var currentURL = window.location.origin;
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var message = $("#message").val();
+		$.ajax({
+			url: currentURL + "/email",
+			type: "POST",
+			data: {
+				name: name,
+				email: email,
+				message: message
+			},
+			success: function(response) {
+				console.log("done");
+			},
+			error: function(xhr) {
+				console.log(xhr);
+			}
+		});
 	});
 	$('.navicon').on('click', function(){
     	$('.mainNavDropDown').slideToggle(500);
