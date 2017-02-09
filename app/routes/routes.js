@@ -50,6 +50,7 @@ module.exports = function(app){
 			console.log('Email send:');
 			console.log(data);
 		});
+		res.send(true);
 	});
 	app.use(function(req, res){
 		res.sendFile(path.join(__dirname + '/../public/html/index.html'));

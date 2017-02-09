@@ -16,8 +16,15 @@ h2 {
 	opacity: 0.0;
 }
 
+#result {
+	font-family: 'Syncopate', sans-serif;
+	color: #c7cfdd;
+	display: inline-block;
+	padding: 10px;
+	opacity: 0.0;
+}
+
 label {
-	padding: 5px;
 	font-family: 'Syncopate', sans-serif;
 	color: #c7cfdd;
 	font-size: 14px;
