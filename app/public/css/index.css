@@ -122,6 +122,10 @@ p {
 	top: -50px;
 }
 
+#tableTwo {
+	display: none;
+}
+
 /* MEDIA QUERIES */
 
 /* For very small screens */
